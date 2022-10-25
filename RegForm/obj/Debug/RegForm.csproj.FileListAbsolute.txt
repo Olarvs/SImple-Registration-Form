@@ -1,0 +1,11 @@
+D:\Github Projects\C#\RegForm\RegForm\bin\Debug\RegForm.exe.config
+D:\Github Projects\C#\RegForm\RegForm\bin\Debug\RegForm.exe
+D:\Github Projects\C#\RegForm\RegForm\bin\Debug\RegForm.pdb
+D:\Github Projects\C#\RegForm\RegForm\obj\Debug\RegForm.csproj.AssemblyReference.cache
+D:\Github Projects\C#\RegForm\RegForm\obj\Debug\RegForm.csproj.SuggestedBindingRedirects.cache
+D:\Github Projects\C#\RegForm\RegForm\obj\Debug\RegForm.Form1.resources
+D:\Github Projects\C#\RegForm\RegForm\obj\Debug\RegForm.Properties.Resources.resources
+D:\Github Projects\C#\RegForm\RegForm\obj\Debug\RegForm.csproj.GenerateResource.cache
+D:\Github Projects\C#\RegForm\RegForm\obj\Debug\RegForm.csproj.CoreCompileInputs.cache
+D:\Github Projects\C#\RegForm\RegForm\obj\Debug\RegForm.exe
+D:\Github Projects\C#\RegForm\RegForm\obj\Debug\RegForm.pdb
