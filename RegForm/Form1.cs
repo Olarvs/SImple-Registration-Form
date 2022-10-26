@@ -89,6 +89,35 @@ namespace RegForm
             outEmail.Visible = true;
             outEmail.Text = txtEmail.Text;
 
+            outTuition.Visible = true;
+            prRemarks.Visible = true;
+
+        }
+
+        private void prForm_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            outTuition.Visible = true;
+            outTuition.Text = "Paid Tuition Fee";
+            outTuition.ForeColor = Color.Black;
+
+            btnPayment.Text = "Paid";
+            btnPayment.BackColor = Color.Green;
+            btnPayment.ForeColor = Color.White;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void outTuition_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

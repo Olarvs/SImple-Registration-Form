@@ -50,17 +50,21 @@
             this.outSec = new System.Windows.Forms.Label();
             this.outNum = new System.Windows.Forms.Label();
             this.outEmail = new System.Windows.Forms.Label();
+            this.btnPayment = new System.Windows.Forms.Button();
+            this.outTuition = new System.Windows.Forms.Label();
+            this.prRemarks = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(120, 7);
+            this.label1.Location = new System.Drawing.Point(143, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(270, 31);
+            this.label1.Size = new System.Drawing.Size(225, 31);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Student Information";
+            this.label1.Text = "Tuition Payment";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -68,9 +72,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(12, 68);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 24);
+            this.label2.Size = new System.Drawing.Size(61, 24);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Student";
+            this.label2.Text = "Name";
             // 
             // label3
             // 
@@ -159,7 +163,7 @@
             // 
             this.txtPrint.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPrint.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.txtPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrint.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrint.Location = new System.Drawing.Point(495, 12);
             this.txtPrint.Name = "txtPrint";
             this.txtPrint.Size = new System.Drawing.Size(293, 426);
@@ -170,28 +174,32 @@
             // 
             // btnPrint
             // 
-            this.btnPrint.Location = new System.Drawing.Point(121, 348);
+            this.btnPrint.BackColor = System.Drawing.Color.White;
+            this.btnPrint.Location = new System.Drawing.Point(274, 348);
             this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(269, 48);
+            this.btnPrint.Size = new System.Drawing.Size(116, 58);
             this.btnPrint.TabIndex = 12;
             this.btnPrint.Text = "Print";
-            this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.UseVisualStyleBackColor = false;
             this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // prForm
             // 
             this.prForm.AutoSize = true;
+            this.prForm.BackColor = System.Drawing.Color.White;
             this.prForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prForm.Location = new System.Drawing.Point(564, 31);
+            this.prForm.Location = new System.Drawing.Point(605, 31);
             this.prForm.Name = "prForm";
-            this.prForm.Size = new System.Drawing.Size(175, 24);
+            this.prForm.Size = new System.Drawing.Size(81, 24);
             this.prForm.TabIndex = 15;
-            this.prForm.Text = "Registration Form";
+            this.prForm.Text = "Receipt";
             this.prForm.Visible = false;
+            this.prForm.Click += new System.EventHandler(this.prForm_Click);
             // 
             // prName
             // 
             this.prName.AutoSize = true;
+            this.prName.BackColor = System.Drawing.Color.White;
             this.prName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.prName.Location = new System.Drawing.Point(514, 76);
             this.prName.Name = "prName";
@@ -203,6 +211,7 @@
             // prSec
             // 
             this.prSec.AutoSize = true;
+            this.prSec.BackColor = System.Drawing.Color.White;
             this.prSec.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.prSec.Location = new System.Drawing.Point(514, 123);
             this.prSec.Name = "prSec";
@@ -214,6 +223,7 @@
             // prNum
             // 
             this.prNum.AutoSize = true;
+            this.prNum.BackColor = System.Drawing.Color.White;
             this.prNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.prNum.Location = new System.Drawing.Point(514, 181);
             this.prNum.Name = "prNum";
@@ -225,6 +235,7 @@
             // prEmail
             // 
             this.prEmail.AutoSize = true;
+            this.prEmail.BackColor = System.Drawing.Color.White;
             this.prEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.prEmail.Location = new System.Drawing.Point(514, 233);
             this.prEmail.Name = "prEmail";
@@ -236,6 +247,7 @@
             // outName
             // 
             this.outName.AutoSize = true;
+            this.outName.BackColor = System.Drawing.Color.White;
             this.outName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.outName.Location = new System.Drawing.Point(578, 76);
             this.outName.Name = "outName";
@@ -248,6 +260,7 @@
             // outSec
             // 
             this.outSec.AutoSize = true;
+            this.outSec.BackColor = System.Drawing.Color.White;
             this.outSec.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.outSec.Location = new System.Drawing.Point(638, 125);
             this.outSec.Name = "outSec";
@@ -260,6 +273,7 @@
             // outNum
             // 
             this.outNum.AutoSize = true;
+            this.outNum.BackColor = System.Drawing.Color.White;
             this.outNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.outNum.Location = new System.Drawing.Point(606, 181);
             this.outNum.Name = "outNum";
@@ -272,6 +286,7 @@
             // outEmail
             // 
             this.outEmail.AutoSize = true;
+            this.outEmail.BackColor = System.Drawing.Color.White;
             this.outEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.outEmail.Location = new System.Drawing.Point(578, 233);
             this.outEmail.Name = "outEmail";
@@ -281,11 +296,55 @@
             this.outEmail.Visible = false;
             this.outEmail.Click += new System.EventHandler(this.label15_Click);
             // 
+            // btnPayment
+            // 
+            this.btnPayment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnPayment.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPayment.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.btnPayment.Location = new System.Drawing.Point(121, 348);
+            this.btnPayment.Name = "btnPayment";
+            this.btnPayment.Size = new System.Drawing.Size(123, 58);
+            this.btnPayment.TabIndex = 24;
+            this.btnPayment.Text = "Pay Tuition Fee";
+            this.btnPayment.UseVisualStyleBackColor = false;
+            this.btnPayment.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // outTuition
+            // 
+            this.outTuition.AutoSize = true;
+            this.outTuition.BackColor = System.Drawing.Color.White;
+            this.outTuition.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.outTuition.Font = new System.Drawing.Font("Corbel", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.outTuition.ForeColor = System.Drawing.Color.Maroon;
+            this.outTuition.Location = new System.Drawing.Point(540, 326);
+            this.outTuition.Name = "outTuition";
+            this.outTuition.Size = new System.Drawing.Size(220, 35);
+            this.outTuition.TabIndex = 25;
+            this.outTuition.Text = "Unpaid Tuition Fee";
+            this.outTuition.Visible = false;
+            this.outTuition.Click += new System.EventHandler(this.outTuition_Click);
+            // 
+            // prRemarks
+            // 
+            this.prRemarks.AutoSize = true;
+            this.prRemarks.BackColor = System.Drawing.Color.White;
+            this.prRemarks.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prRemarks.Location = new System.Drawing.Point(513, 294);
+            this.prRemarks.Name = "prRemarks";
+            this.prRemarks.Size = new System.Drawing.Size(81, 20);
+            this.prRemarks.TabIndex = 26;
+            this.prRemarks.Text = "Remark/s:";
+            this.prRemarks.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.prRemarks);
+            this.Controls.Add(this.outTuition);
+            this.Controls.Add(this.btnPayment);
             this.Controls.Add(this.outEmail);
             this.Controls.Add(this.outNum);
             this.Controls.Add(this.outSec);
@@ -340,6 +399,9 @@
         private System.Windows.Forms.Label outSec;
         private System.Windows.Forms.Label outNum;
         private System.Windows.Forms.Label outEmail;
+        private System.Windows.Forms.Button btnPayment;
+        private System.Windows.Forms.Label outTuition;
+        private System.Windows.Forms.Label prRemarks;
     }
 }
 
